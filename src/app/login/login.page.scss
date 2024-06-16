@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+.login{
+    width: 80%;
+    height: 20%;
+    background-color: rgb(34, 0, 41);
+    margin-top: 25px;  
+    padding-top: 20px;  
+    padding-bottom: 20px;   
+    margin-left: auto;
+    margin-right: auto; /* Centra horizontalmente el login */ 
+    border: 5px inset rgb(42, 0, 50);
+    ion-input{
+        font-size: 20px;
+        border: 5px inset rgb(42, 0, 50);
+        margin-bottom: 20px; /* Ajusta la cantidad de separación deseada */
+        margin-top: 20px;       
+        width: 80%; 
+        margin-left: auto;
+        margin-right: auto; /* Centra horizontalmente el login */ 
+    }
+}
+
+.button-container{
+    padding-top: 20px;     
+    text-align: center; /* Centra horizontalmente el contenido */
+    .ion-button{
+        margin-top: 20px;
+        display: block; /* Convierte el botón en un bloque para centrarlo horizontalmente */
+        margin: 0 auto; /* Centra el botón horizontalmente en su contenedor */
+    }
+}
+
+.button-container2{
+    width: 60%;
+    height: 20%;
+    background-color: rgb(34, 0, 41);
+    margin-top: 20px;  
+    padding-top: 20px;  
+    padding-bottom: 20px;   
+    margin-left: auto;
+    margin-right: auto; /* Centra horizontalmente el login */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px inset rgb(42, 0, 50);
+    ion-button{
+        font-size: 15px;
+        --background: black;
+        color: white;
+        border: 5px outset rgb(42, 0, 50);
+        margin-bottom: 10px; /* Ajusta la cantidad de separación deseada */
+        margin-top: 10px;       
+        width: 75%; 
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto; /* Centra horizontalmente el login */ 
+        display: flex;
+        align-items: center;
+        p{
+            margin-right: 10px;
+        }       
+    }
+    
+}
+*{
+    font-family: 'Prata', serif;
+}
+
+.diagonal-line {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Grosor de las líneas */
+    background-color: white; /* Color de las líneas */
+    transform-origin: 0 100%;
+    transform: skewX(-45deg); /* Inclina la línea en un ángulo de 45 grados */
+    z-index: 1; /* Asegura que las líneas estén por encima de otros elementos */
+  }
+  .text-container{
+    margin-top: 40px;  
+    text-align: center; /* Centra horizontalmente el contenido */
+    font-size: 20px;    
+  }

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-size: 25px; text-align: center;">
+      Cargar nuevo gasto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label style="font-size: 20px;" position="stacked">Categoría</ion-label>
+      <ion-select [(ngModel)]="categoria">
+        <ion-select-option value="alimentos">Alimentos</ion-select-option>
+        <ion-select-option value="medicina">Medicina</ion-select-option>
+        <ion-select-option value="servicios">Servicios</ion-select-option>
+        <ion-select-option value="impuestos">Impuestos</ion-select-option>
+        <!-- Agrega más categorías aquí -->
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label style="font-size: 20px;" position="stacked">Monto</ion-label>
+      <ion-input type="number" [(ngModel)]="monto"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label style="font-size: 20px;" position="stacked">Fecha</ion-label>
+      <ion-datetime display-format="DD MMM YYYY" [(ngModel)]="fecha"></ion-datetime>
+    </ion-item>
+  </ion-list>
+  <ion-button style="font-size: 20px;" class="purple-button" expand="full" (click)="guardarGasto()">Guardar</ion-button>
+</ion-content>

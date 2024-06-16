@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hola-117a7": {
+      "hosting": {
+        "app": [
+          "hola-117a7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hola-117a7"
+  }
+}

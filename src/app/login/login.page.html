@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true" style="--background: rgb(23, 0, 28);">  
+  <ion-toolbar style="--background: rgb(15, 0, 18); text-align: center;">
+    <ion-title style="font-size: 22px;">¡Te damos la bienvenida!</ion-title>
+  </ion-toolbar>  
+  <form (ngSubmit)="login()">
+    <div class="text-container">      
+      <p>Opciones para el ingreso rápido:</p>
+    </div>    
+    <div class = button-container2>      
+      <ion-button (click)="AutoRellenar('admin@admin.com','111111')"><p>Usuario 1</p><ion-icon name="enter-outline"></ion-icon></ion-button>
+      <ion-button (click)="AutoRellenar('invitado@invitado.com','222222')"><p>Usuario 2</p><ion-icon name="enter-outline"></ion-icon></ion-button>
+      <ion-button (click)="AutoRellenar('usuario@usuario.com','333333')"><p>Usuario 3</p><ion-icon name="enter-outline"></ion-icon></ion-button>
+    </div>   
+    <div class="text-container">      
+      <p>Ingreso manual:</p>
+    </div>  
+    <div class = login>
+      <ion-input placeholder=" Ingrese su correo" type="email" [(ngModel)]="email" name="email"></ion-input>
+      <ion-input placeholder=" Ingrese su contraseña" type="password" [(ngModel)]="password" name="password" required minlength="6"></ion-input>  
+    </div>
+    <div class = button-container>
+      <ion-button style = "font-size: 18px; --background: rgb(0, 0, 0); color: white;" type="submit">INGRESAR</ion-button>
+    </div>         
+  </form>         
+</ion-content>

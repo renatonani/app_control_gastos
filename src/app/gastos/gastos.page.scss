@@ -1,0 +1,15 @@
+.purple-button {
+    --background: #800080; /* Color de fondo violeta */
+    color: #fff; /* Texto en color blanco */
+    border: none;
+    margin-top: 10px; /* Margen superior para separar el botón del texto */
+    height: 70px;
+}
+*{
+    --background: #540054;
+}
+ion-label{    
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 20px;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* Centrar el texto en el título */
+.center-text {
+    text-align: center;
+  }
+  
+  /* Estilos para los elementos de entrada */
+  .input-item {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos para el cuadro de texto */
+.info-box {
+  border: 1px solid #ccc; /* Borde del cuadro */
+  padding: 10px; /* Espaciado interno */
+  margin: 10px; /* Margen externo */
+  text-align: center; /* Texto centrado */
+}
+
+/* Estilos para el botón "Agregar Gasto" */
+.purple-button {
+  --background: #800080; /* Color de fondo violeta */
+  color: #fff; /* Texto en color blanco */
+  border: none;
+  margin-top: 10px; /* Margen superior para separar el botón del texto */
+}
+
+.red-button{
+  --background: #800000; /* Color de fondo violeta */
+  color: #fff; /* Texto en color blanco */
+  border: none;
+  margin-top: 10px; /* Margen superior para separar el botón del texto */
+}
+
+/* Cambiar el color al botón al pasar el cursor sobre él */
+.purple-button:hover {
+  --background: #6a006a; /* Cambia el tono de violeta al pasar el cursor */
+}
+
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ion-button{
+  height: 50px;
+}
+
+ion-input{
+  font-size: 20px;
+}
+.superior
+{
+  margin-top: 100px;
+}
+
+.percent-input {
+  position: relative;
+}
+
+.percent-input::after {
+  content: '%';
+  position: absolute;
+  right: 100px; /* Ajusta el valor según tu diseño */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #ffffff; /* Color del símbolo "%" */
+}

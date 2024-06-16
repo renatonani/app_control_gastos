@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="center-text">¡Bienvenido!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-wrapper">
+  <div class="superior">
+    <ion-item class="input-item">
+      <ion-label position="floating">Sueldo</ion-label>
+      <ion-input type="number" [(ngModel)]="sueldo"></ion-input>
+    </ion-item>
+  
+    <ion-item class="input-item">
+      <ion-label position="floating">Tope de Gasto</ion-label>
+      <ion-input type="number" [(ngModel)]="porcentaje" class="percent-input"></ion-input>     
+    </ion-item>
+  
+    <ion-button expand="full" class="purple-button" (click)="guardarSueldoYTope()">Guardar</ion-button>
+    <ion-button expand="full" class="red-button" (click)="logout()">Cerrar sesión</ion-button>
+  </div>
+
+  <div *ngIf="sueldoAnterior && umbralAnterior" class="info-box">
+    <h1>Se encontraron datos anteriores:</h1>
+    <h2>Sueldo Anterior: ${{ sueldoAnterior }}</h2>
+    <h2>Tope de Gasto Anterior: ${{ umbralAnterior }}</h2>
+    <ion-button expand="full" class="purple-button" (click)="agregarGasto()">Agregar Gasto</ion-button>
+    <ion-button expand="full" class="purple-button" (click)="verGraficos()">Ver gráficos</ion-button>
+    
+  </div>    
+</ion-content>
+
